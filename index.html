@@ -1,31 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelly Dadisman | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #fdfaf6;
+      color: #3e2c2c;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #7c4d35;
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff2e6;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d99a6c;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      
+      color: #5a3c29;
+      margin-bottom: 1rem;
+    
+      font-size: 2.5rem;
+    }
+
+    #home h1 {
+      font-size: 5rem;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #a1674a;
+      color: #fff2e6;
+      border-radius: 20px;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.85rem;
+      margin: 0.2rem;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .tab-button {
+      background-color: #e5d3c2;
+      border: none;
+      padding: 0.6rem 1rem;
+      margin: 0.2rem;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      flex: 1 1 auto;
+    }
+
+    .tab-button.active {
+      background-color: #b56f45;
+      color: white;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .tabs {
+        flex-direction: column;
+      }
+
+      .tab-button {
+        width: 100%;
+        text-align: left;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+    }
+      a[href="#case-studies"], a[href="#about"] {
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    a[href="#case-studies"]:hover {
+      background-color: #8e5236;
+      transform: translateY(-2px);
+    }
+
+    a[href="#about"]:hover {
+      background-color: #8e5236;
+      transform: translateY(-2px);
+    }
+</style>
 </head>
 <body>
 
-    <p>Program Management (Current)</p>
+<!-- Navigation -->
 
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#resume">Resume</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#about">About</a>
+  </nav>
 
-    <p>Security Vulernability Workflow for Operations Team (Current)Jira Rich Filter Dashboard</p>
+  <!-- Hero Section -->
 
-    <p>Quality Assuarnce Workflow with 8 Discipline (8D) Implementation</p>
+  <section id="home" class="fade-in">
+    <h1>Kelly Dadisman, CSM</h1>
+    <h2 style="font-size: 1.5rem; font-weight: normal; color: #7c4d35; margin-top: -0.5rem;">Systems Developer & Quality Assurance Analyst</h2>
+    <p>I deliver quality assurance rooted in system development and program management—empowering product teams and elevating the SaaS user experience.</p>
+      <br><a href="#case-studies" style="flex: 1 1 auto; text-align: center; background-color: #a1674a; color: #fff2e6; padding: 0.4rem 0.6rem; border-radius: 5px; text-decoration: none; font-weight: bold;">View Work</a>
+      <a href="#about" style="flex: 1 1 auto; text-align: center; background-color: #a1674a; color: #fff2e6; padding: 0.4rem 0.9rem; border-radius: 5px; text-decoration: none; font-weight: bold;">Contact Me</a>
+  </section>
 
-    <p>Security Team Workflow</p>
+<!-- Professional Experience -->
 
-    <p>Management Team Prioritization Workflow</p>
-
-    <p>Application Admin Tasks</p>
-    <ul>
-        <li>review all plugin usage - review to see which one used most often...aything applicable to next upgrade/release</li>
-        <li>test all plugins (confluence and jira) after minor/major upgrades</li>
-        <li>prep and update plugins in dev (test) > staging (test) > prod (verify in prod that all plugins function as expected)</li>
-        <li>run test, work with plugin vendor(s) to resolve issues (if any) then retest with applicable upgrade version</li>
-        
+  <section id="resume" class="fade-in">
+    <h2>Resume</h2>
+    <h2 style="font-size: 1.5rem; font-weight: normal; color: #7c4d35; margin-top: -0.5rem;">Skills and Technologies</h2>
+    <div>
+      <span class="badge">Jira</span>
+      <span class="badge">Confluence</span>
+      <span class="badge">Agile</span>
+      <span class="badge">ServiceNow</span>
+      <span class="badge">Waterfall</span>
+      <span class="badge">SharePoint</span>
+      <span class="badge">Postman</span>
+      <span class="badge">IBM Rational ClearCase</span>
+      <span class="badge">IBM Rational ClearQuest</span>
+      <span class="badge">Fisheye/Crucible</span>
+      <span class="badge">Rally</span>
+      <span class="badge">Linux</span>
+      <span class="badge">MacOS</span>
+      <span class="badge">Windows</span>
+      <span class="badge">Office 365</span>
+      <span class="badge">Adobe Acrobat</span>
+      <span class="badge">AS9100:D</span>
+      <span class="badge">Certified Scrum Master</span>
+    </div>
+    <br><h2 style="font-size: 1.5rem; font-weight: normal; color: #7c4d35; margin-top: -0.5rem;">Experience</h2>
+    <h4>Quality Assurance Analyst | Northrop Grumman - Astro Aerospace (2017–Present)</h4>
+    <ul style="padding-left: 1.5rem;">
+      <li>Oversaw quality documentation compliance, conducted internal audits with reporting to leadership, coordinated document updates to meet AS9100 Rev. D standards, and supported key Quality department functions including change control, validation, corrective actions, and certifications.</li>
     </ul>
+    <br><h4>Systems Developer/Software Configuration Mangement Engineer | Pearson (2005–Present)</h4>
+<ul style="padding-left: 1.5rem;">
+      <li>Managed technical documentation and software licensing, resolved application issues, led Jira project implementations and training, collaborated across teams to improve processes, and served as a key liaison for tools support, onboarding, and software procurement.</li>
+</ul>
+      <br><h4>Software Configuration Management Engineer | L-3 Communications (2002–2005)</h4>
+<ul style="padding-left: 1.5rem;">
+      <li>Collaborated with engineering and QA teams on software builds, coordinated with buyers and vendors to procure hardware and software, and ensured ongoing compliance in software license management.</li>
+</ul>
+
+    <div style="margin-top: 1.5rem;">
+      <a href="#about" target="_blank" style="flex: 1 1 auto; text-align: center; background-color: #a1674a; color: #fff2e6; padding: 0.4rem 0.9rem; border-radius: 5px; text-decoration: none; font-weight: bold;">Download Full Resume</a>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+
+  <section id="case-studies" class="fade-in">
+    <h2>Case Studies</h2>
+    <p>While much of my work is proprietary, here are selected projects I've worked on.</p>
+    <br>
+    <div class="tabs">
+      <button class="tab-button active" onclick="showTab(0)">Wiki Cleanup Across 8 Teams (Current)</button>
+      <button class="tab-button" onclick="showTab(1)">Security Vulnerability Workflow for Operations Team (Current)</button>
+      <button class="tab-button" onclick="showTab(2)">Jira Rich Filter Dashboard Development</button>
+      <button class="tab-button" onclick="showTab(3)">Quality Assurance Team Workflow with 8D Implementation</button>
+      <button class="tab-button" onclick="showTab(4)">Security Team Workflow</button>
+      <button class="tab-button" onclick="showTab(5)">Streamlining Risk Management Process + Migration</button>
+      <button class="tab-button" onclick="showTab(6)">Daily Application Admin Tasks</button>
+    </div>
+    <div class="tab-content active">Led a documentation audit across 8 engineering teams, streamlining thousands of outdated Confluence pages into a clean, accurate knowledge base.
+    <br><br><ul style="padding-left: 1.5rem;">
+        <li>Challenge: </li>
+        <li>Solution:</li>
+        <li>Results:</li>
+    </ul>
+    </div>
+    <div class="tab-content">[summary]
+        <br><br><ul style="padding-left: 1.5rem;">
+        <li>Challenge:</li>
+        <li>Solution:</li>
+        <li>Results:</li>
+    </ul>
+    </div>
+    <div class="tab-content">[summary]
+        <br><br><ul style="padding-left: 1.5rem;">
+        <li>Challenge:</li>
+        <li>Solution:</li>
+        <li>Results:</li>
+    </ul>
+    </div>
+    <div class="tab-content">A custom Jira workflow based on the 8D methodology was successfully implemented for a new Quality Assurance (QA) team, replacing spreadsheets, improving efficiency, enabling real-time reporting, and saving costs.
+        <br><br><ul style="padding-left: 1.5rem;">
+        <li>Challenge: A newly formed Quality Assurance (QA) team lacked a dedicated system to track and manage QA-related activities. The team, which had grown to over 30 members, was relying on Excel spreadsheets, making it difficult to maintain consistent processes, track progress, and generate reliable reports.</li>
+        <li>Solution:</li>
+        <li>Results:</li>
+    </ul>
+    <br><a href="8D_Case Study.pdf" target="_blank">View Details &#8594</a>
+    </div>
+    <div class="tab-content">[summary]
+        <br><br><ul style="padding-left: 1.5rem;">
+        <li>Challenge:</li>
+        <li>Solution:</li>
+        <li>Results:</li>
+    </ul>
+    </div>
+    <div class="tab-content">A cross-functional team streamlined risk tracking and agile workflows for 8 engineering teams by implementing a unified Jira system to enhance visibility, efficiency, and executive reporting across 50+ users.
+        <br><br><ul style="padding-left: 1.5rem;">
+        <li>Challenge:</li>
+        <li>Solution:</li>
+        <li>Results:</li>
+    </ul>
+    </div>
+    <div class="tab-content">[summary]
+        <br><br><ul style="padding-left: 1.5rem;">
+        <li>Challenge:</li>
+        <li>Solution:</li>
+        <li>Results:</li>
+    </ul>
+    </div>
+  </section>
+
+<!-- About -->
+
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+      <p>Greetings! I’m a results-oriented professional with a strong technical and process-driven background, currently seeking a new challenge. As an innovative and dedicated Systems Developer, I bring deep expertise in systems and application development, with a strong focus on project management and successful delivery.</p>
+      <br><p>I have solid knowledge of Agile Scrum, Software Development Life Cycle (SDLC) methodologies, and Information Technology InfrastructureLibrary (ITIL). One of my key strengths is building strong relationships with both internal and external stakeholders. Additionally, my broad experience with Atlassian tools (i.e., Confluence, Jira Software, and Jira Agile) makes me a valuable asset to any organization.</p>
+      <br><p>I’m creative, resourceful, and adaptable to ever-changing environments, and I’m always eager to learn new software, programs, or methodologies to meet the demands of a new opportunity. I enjoy industry networking and am excited to take on my next role. Please feel free to connect with me on LinkedIn. Here’s to continued professional success!</p>
+      <br><a href="https://www.linkedin.com/in/kdadisman/" target="_blank" style="flex: 1 1 auto; text-align: center; background-color: #a1674a; color: #fff2e6; padding: 0.4rem 0.6rem; border-radius: 5px; text-decoration: none; font-weight: bold;">LinkedIn</a>
+      <a href="https://kelly-nd.github.io/portfolio" target="_blank" style="flex: 1 1 auto; text-align: center; background-color: #a1674a; color: #fff2e6; padding: 0.4rem 0.6rem; border-radius: 5px; text-decoration: none; font-weight: bold;">GitHub</a>
+  
+  </section>
+
+  <script>
+    // Simple scroll-triggered animation
+    const fadeIns = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeIns.forEach(section => {
+      observer.observe(section);
+    });
+
+    // Tab functionality for Case Studies
+    function showTab(index) {
+      const tabs = document.querySelectorAll('.tab-button');
+      const contents = document.querySelectorAll('.tab-content');
+      tabs.forEach((tab, i) => {
+        tab.classList.toggle('active', i === index);
+        contents[i].classList.toggle('active', i === index);
+      });
+    }
+  </script>
 
 </body>
 </html>
