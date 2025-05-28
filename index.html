@@ -215,7 +215,11 @@
 <ul style="padding-left: 1.5rem;">
       <li>Collaborated with engineering and QA teams on software builds, coordinated with buyers and vendors to procure hardware and software, and ensured ongoing compliance in software license management.</li>
 </ul>
-
+  <!-- Modal Trigger Button -->
+  <div style="text-align: center; margin-top: 2rem;">
+    <button onclick="openModal()" style="background-color: #a1674a; color: #fff2e6; padding: 0.4rem 0.6rem; border-radius: 5px; border: none; font-weight: bold; cursor: pointer;">Recognition & Awards</button>
+  </div>
+    
     <div style="margin-top: 1.5rem;">
       <a href="#about" target="_blank" style="flex: 1 1 auto; text-align: center; background-color: #a1674a; color: #fff2e6; padding: 0.4rem 0.9rem; border-radius: 5px; text-decoration: none; font-weight: bold;">Download Full Resume</a>
     </div>
@@ -300,6 +304,13 @@
         tab.classList.toggle('active', i === index);
         contents[i].classList.toggle('active', i === index);
       });
+    }
+          function openModal() {
+      document.getElementById('myModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = 'none';
     }
   </script>
 
